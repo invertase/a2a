@@ -1,0 +1,29 @@
+{
+  "name": "a2a",
+  "version": "1.0.0",
+  "description": "Async await to Array",
+  "main": "index.js",
+  "scripts": {
+    "test": "nyc --reporter=html mocha"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/invertase-incubator/a2a.git"
+  },
+  "keywords": [
+    "async",
+    "await",
+    "async await",
+    "promise"
+  ],
+  "author": "Invertase Limited",
+  "license": "Apache-2.0",
+  "bugs": {
+    "url": "https://github.com/invertase-incubator/a2a/issues"
+  },
+  "homepage": "https://github.com/invertase-incubator/a2a#readme",
+  "devDependencies": {
+    "mocha": "^5.2.0",
+    "nyc": "^13.0.1"
+  }
+}
