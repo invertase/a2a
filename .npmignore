@@ -1,0 +1,6 @@
+.editorconfig
+.idea
+.vscode
+coverage
+test
+.nyc_output
