@@ -5,36 +5,36 @@ Simplify your promise workflow.
 ## Install
 
 ```bash
-npm install --save a2a
+npm install --save @iinc/a2a
 ```
 
 ## Example
 
 ```js
-const A2A = require('a2a');
+const A2A = require('@iinc/a2a');
 const axios = require('axios');
 
 async function example1() {
-    const request = axios.get('https://api.com/users');
-    const [error, users] = await A2A(request);
+  const [ error, users ] = await A2A(axios.get('https://api.com/users'));
+  if (error) {
+    // ... do something
+  }
 
-    if (error) throw new Error(error);
-
-    console.log('Users', users);
+  console.log('Users', users);
 }
 
 async function example2() {
-    const requests = [
-        () => axios.get('https://api.com/users'),
-        () => axios.get('https://api.com/profile'),
-    ];
-
-    const [error, results] = await A2A(requests);
-
-    if (error) throw new Error(error);
-
-    console.log('Users', results[0]);
-    console.log('Profile', results[1]);
+  const [ error, [ users, profile ] ] = await A2A([
+    axios.get('https://api.com/users'),
+    axios.get('https://api.com/profile'),
+  ]);
+  
+  if (error) {
+    // ... do something
+  }
+  
+  console.log('Users', users);
+  console.log('Profile', profile);
 }
 
 example1();
