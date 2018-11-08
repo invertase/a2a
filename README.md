@@ -5,7 +5,7 @@ Simplify your promise workflow.
 ## Install
 
 ```bash
-npm install --save @iinc/a2a
+npm install --save a2a
 ```
 
 ## Example
