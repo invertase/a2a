@@ -1,5 +1,9 @@
 # A2A - Async Await to Array
 
+<a href="https://www.npmjs.com/package/a2a"><img src="https://img.shields.io/npm/dm/a2a.svg?style=flat-square" alt="NPM downloads"></a>
+<a href="https://www.npmjs.com/package/a2a"><img src="https://img.shields.io/npm/v/a2a.svg?style=flat-square" alt="NPM version"></a>
+<a href="/LICENSE"><img src="https://img.shields.io/npm/l/a2a.svg?style=flat-square" alt="License"></a>
+
 Simplify your promise workflow.
 
 ## Install
