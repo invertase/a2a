@@ -15,7 +15,7 @@ npm install --save a2a
 ## Example
 
 ```js
-const A2A = require('@iinc/a2a');
+const A2A = require('a2a');
 const axios = require('axios');
 
 async function example1() {
