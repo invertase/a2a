@@ -3,8 +3,9 @@
   "version": "0.1.0",
   "description": "Async await to Array",
   "main": "index.js",
+  "types": "index.d.ts",
   "scripts": {
-    "test": "nyc --reporter=html mocha"
+    "test": "nyc --reporter=html mocha && ts-node test/tsd.ts"
   },
   "repository": {
     "type": "git",
@@ -23,7 +24,10 @@
   },
   "homepage": "https://github.com/invertase/a2a#readme",
   "devDependencies": {
+    "@types/node": "^10.12.4",
     "mocha": "^5.2.0",
-    "nyc": "^13.0.1"
+    "nyc": "^13.0.1",
+    "ts-node": "^7.0.1",
+    "typescript": "^3.1.6"
   }
 }

@@ -44,3 +44,22 @@ async function example2() {
 example1();
 example2();
 ```
+
+## TypeScript
+```ts
+import a2a from 'a2a';
+
+a2a(Promise.resolve(123)) // => Promise<[any, number]>
+  .then(([error, result]) => {
+    console.log(result as number);
+  });
+
+// => Promise<[any, number|string]>
+a2a<number|string>(Promise.resolve('123'));
+
+// => Promise<[any, Array<number|string>]>
+a2a<number|string>([Promise.resolve('123')]);
+
+// => Promise<[Error, number|string>>
+a2a<number|string, Error>(Promise.resolve('123'));
+```
